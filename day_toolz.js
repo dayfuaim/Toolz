@@ -1,6 +1,6 @@
 /* Some toolz for VM */
 
-let _VMoptions = {
+const _VMoptions = {
   childList: true,
   subtree: true,
   characterDataOldValue: false
