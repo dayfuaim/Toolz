@@ -6,9 +6,6 @@ const _VMoptions = {
   characterDataOldValue: false
 };
 
-let _VMNode = document.querySelector('body');
-let _VMGoal = _VMNode.querySelector('button');
-
 function _Watch(_Node2Watch, _Node2Act) {
 
   const callback = function(mutation observer) {
