@@ -12,7 +12,7 @@ function _Watch(_Node2Watch, _Node2Act, _KickCallback) {
     for (let mutation of mutations) {
       if (mutation.type === 'childList' || mutation.type === 'subTree') {
         let _node = _Node2Act;
-        if (_node) {
+        if (_node && typeof _kickCallback == 'function') {
           _KickCallback(_node);
         }
       }
