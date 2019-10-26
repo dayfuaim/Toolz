@@ -6,14 +6,14 @@ const _VMoptions = {
   characterDataOldValue: false
 };
 
-function _Watch(_Node2Watch, _Node2Act) {
+function _Watch(_Node2Watch, _Node2Act, _KickCallback) {
 
   const callback = function(mutation observer) {
     for (let mutation of mutations) {
       if (mutation.type === 'childList' || mutation.type === 'subTree') {
-        let _node = _Node2Watch;
+        let _node = _Node2Act;
         if (_node) {
-          dialogKick(_node);
+          _KickCallback(_node);
         }
       }
     }
