@@ -6,8 +6,6 @@ const _VMoptions = {
   characterDataOldValue: false
 };
 
-var _Node2Watch = document.querySelector('body');
-
 function _Watch(_Node2Watch, _Node2Act, _KickCallback) {
 
   const callback = function(mutations) {
