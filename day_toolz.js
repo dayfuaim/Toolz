@@ -6,9 +6,11 @@ const _VMoptions = {
   characterDataOldValue: false
 };
 
+var _Node2Watch = document.querySelector('body');
+
 function _Watch(_Node2Watch, _Node2Act, _KickCallback) {
 
-  const callback = function(mutation observer) {
+  const callback = function(mutations) {
     for (let mutation of mutations) {
       if (mutation.type === 'childList' || mutation.type === 'subTree') {
         let _node = _Node2Act;
